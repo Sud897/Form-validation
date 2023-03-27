@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Shadows+Into+Light&display=swap");
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  /* background-color: aqua; */
+}
+#input_div {
+  width: 50%;
+}
+/* .name div {
+  width: 50%;
+} */
+.label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+.prof_gen {
+  display: flex;
+}
+
+.hobby_skill {
+  display: flex;
+}
+#submit {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: rgb(36, 161, 218);
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: azure;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: rgb(103, 194, 236);
+}
+#submit:disabled,
+input[disabled] {
+  background-color: rgb(211, 211, 211);
+}
+.button {
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 560px) {
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+  #input_div {
+    width: 100%;
+  }
+  .prof_gen {
+    display: flex;
+    flex-direction: column;
+  }
+  .hobby_skill {
+    display: flex;
+    flex-direction: column;
+  }
+}

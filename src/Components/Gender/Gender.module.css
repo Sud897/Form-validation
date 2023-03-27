@@ -1,0 +1,56 @@
+.gender {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  /* background-color: aqua; */
+  /* margin-left: 10px; */
+}
+.radioBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  background-color: rgb(220, 231, 240);
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+.radioBox div {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3px;
+}
+
+.gender label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+.type {
+  font-size: 14px;
+}
+.radioBox input,
+label {
+  cursor: pointer;
+}
+.invalid {
+  margin-bottom: 15px;
+}
+.invalid label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: red;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+@media (max-width: 560px) {
+  .gender {
+    margin-left: 10px;
+  }
+  .radioBox {
+    width: 98%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
